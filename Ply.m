@@ -129,7 +129,7 @@ end
 % Helper methods
 
 function isFailure = maxStrength(sigmaX, sigmaY, tauXY, ply)
-    T = TransformationMatrix(ply.Theta);
+    T = ply.TransformationMatrix();
     sigmaTmp = T*[sigmaX; sigmaY; tauXY];
     sigma1 = sigmaTmp(1);
     sigma2 = sigmaTmp(2);
@@ -141,7 +141,7 @@ function isFailure = maxStrength(sigmaX, sigmaY, tauXY, ply)
 end
 
 function isFailure = maxStrain(sigmaX, sigmaY, tauXY, ply)
-    T = TransformationMatrix(ply.Theta);
+    T = ply.TransformationMatrix();
     
     xiC1ult = ply.Material.sigmaC1ult/ply.Material.E1;
     xiT1ult = ply.Material.sigmaT1ult/ply.Material.E1;
@@ -165,7 +165,7 @@ function isFailure = maxStrain(sigmaX, sigmaY, tauXY, ply)
 end
 
 function isFailure = TsaiHill(sigmaX, sigmaY, tauXY, ply)
-    T = TransformationMatrix(ply.Theta);
+    T = ply.TransformationMatrix();
     sigmaTmp = T*[sigmaX; sigmaY; tauXY];
     sigma1 = sigmaTmp(1);
     sigma2 = sigmaTmp(2);
@@ -178,7 +178,7 @@ function isFailure = TsaiHill(sigmaX, sigmaY, tauXY, ply)
 end
 
 function isFailure = TsaiWu(sigmaX, sigmaY, tauXY, ply)
-    T = TransformationMatrix(ply.Theta);
+    T = ply.TransformationMatrix();
     sigmaTmp = T*[sigmaX; sigmaY; tauXY];
     sigma1 = sigmaTmp(1);
     sigma2 = sigmaTmp(2);

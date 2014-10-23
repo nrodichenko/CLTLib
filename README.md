@@ -1,7 +1,7 @@
 This is a first version of Classical Laminate Theory library for Matlab
 by Rodichenko Nikita
-(c) 2014
-the development of this library was started during the Fall 2014
+(c) 2014.
+Development of this library was started during the Fall 2014
 Application Period at Skolkovo Institute of Science and Technology
 (Skoltech), Moscow, Russia
 e-mail: nikita.rodichenko@gmail.com

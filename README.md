@@ -1,33 +1,26 @@
 This is a first version of Classical Laminate Theory library for Matlab
 by Rodichenko Nikita
 (c) 2014.
+
 Development of this library was started during the Fall 2014
 Application Period at Skolkovo Institute of Science and Technology
 (Skoltech), Moscow, Russia
+
 e-mail: nikita.rodichenko@gmail.com
 
-Supplied progressbar.m 
-Copyright (c) 2005, Steve Hoelzer
+Supplied progressbar.m, 
+copyright (c) 2005, Steve Hoelzer
 All rights reserved.
-
 
 Units used: SI System of Units
 
 Disclaimer: This library is distributed as-is. The author doesn't
 guarantee its fit for any particular purpose or usage.
 
-Functions and classes implemented so far (rev.1, 24 oct 2014):
-Material
-Ply
-QBarMatrix
-TMatrix
-CheckFailure
-DrawFailureEnvelope
+Functions and classes implemented so far (rev.1, 24 oct 2014): Material, Ply
 
 References:
-[1] Mechanics of Composite Materials, Second Edition by Kaw
-
-
+[1] Autar K. Kaw, Mechanics of Composite Materials (Second Edition), CRC Press, 2005
 
 
 Redistribution and use in source and binary forms, with or without

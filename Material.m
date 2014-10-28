@@ -4,17 +4,17 @@ classdef Material
         
         % Source: Table 2.1, p.106, [1]
         % Material properties
-        Vf          % [unitless] Fiber volume fraction
-        E1          % [GPa] Longitudinal elastic modulus
-        E2          % [GPa] Transverse elastic modulus
-        G12         % [GPa] Shear modulus
-        v12         % [unitless] Major Poisson?s ratio
+Vf          % [unitless] Fiber volume fraction
+E1          % [MPa] Longitudinal elastic modulus
+E2          % [MPa] Transverse elastic modulus
+G12         % [MPa] Shear modulus
+v12         % [unitless] Major Poisson ratio
 
-        sigmaC1ult  % [MPa] Ultimate longitudinal compressive strength
-        sigmaT1ult  % [MPa] Ultimate longitudinal tensile strength
-        sigmaC2ult  % [MPa] Ultimate transverse compressive strength
-        sigmaT2ult  % [MPa] Ultimate transverse tensile strength
-        tau12ult    % [MPa] Ultimate in-plane shear strength
+sigmaC1ult  % [MPa] Ultimate longitudinal compressive strength
+sigmaT1ult  % [MPa] Ultimate longitudinal tensile strength
+sigmaC2ult  % [MPa] Ultimate transverse compressive strength
+sigmaT2ult  % [MPa] Ultimate transverse tensile strength
+tau12ult    % [MPa] Ultimate in-plane shear strength
         
         % TODO: add the following parameters
         % Longitudinal coefficient of thermal expansion
@@ -47,19 +47,19 @@ classdef Material
         % Create Glass/Epoxy material
         % Source: Table 2.1, p.106, [1]
         function m = GlassEpoxy()
-            m = Material('Glass/Epoxy', 0.45, 38.6, 8.27, 4.14, 0.26, 610, 1062, 118, 31, 72);
+            m = Material('Glass/Epoxy', 0.45, 38.6e3, 8.27e3, 4.14e3, 0.26, 610, 1062, 118, 31, 72);
         end
         
         % Create Graphite/Epoxy material
         % Source: Table 2.1, p.106, [1]
         function m = GraphiteEpoxy()
-            m = Material('Graphite/Epoxy', 0.70, 181, 10.30, 7.17, 0.28, 1500, 1500, 246, 40, 68);
+            m = Material('Graphite/Epoxy', 0.70, 181e3, 10.30e3, 7.17e3, 0.28, 1500, 1500, 246, 40, 68);
         end
         
         % Create Boron/Epoxy material
         % Source: Table 2.1, p.106, [1]
         function m = BoronEpoxy()
-            m = Material('Boron/Epoxy', 0.50, 204, 18.50, 5.59, 0.23, 2500, 1260, 202, 61, 67);
+            m = Material('Boron/Epoxy', 0.50, 204e3, 18.50e3, 5.59e3, 0.23, 2500, 1260, 202, 61, 67);
         end
     end
 end
